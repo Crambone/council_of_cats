@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Council of Cats</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Short+Stack&display=swap" rel="stylesheet">
+
+        <link rel="icon" href="assets/favicon.ico">
+        <link rel="stylesheet" href="assets/index.css">
+        <script src="src/index.js" defer></script>
+        
+    </head>
+    <body class="dark">
+        <div id="navBar" class="top">
+            <div class="cats">
+                <button id="logoTop">Council of Cats</button>
+                <button class="sidebarCat" id="nanaSidebar">
+                    <div class="pfpContainer">
+                        <img class="pfp sidebar" src="assets/cats/nana.jpg" alt="Nana">
+                    </div>
+                    <b>Nana</b>
+                </button>
+                <button class="sidebarCat" id="uniSidebar">
+                    <div class="pfpContainer">
+                        <img class="pfp sidebar" src="assets/cats/uni.jpg" alt="Uni">
+                    </div>
+                    <b>Uni</b>
+                </button>
+                <button class="sidebarCat" id="oatmealSidebar">
+                    <div class="pfpContainer">
+                        <img class="pfp sidebar" src="assets/cats/oatmeal.jpg" alt="Oatmeal">
+                    </div>
+                    <b>Oatmeal</b>
+                </button>
+                <div class="spacer"></div>
+                <button class="sidebarCat" id="darkLightMode">
+                    <img id="moon" class="" src="assets/moon.svg" alt="Moon">
+                    <img id="sun" class="hide" src="assets/sun.svg" alt="Sun">
+                    <b>Theme</b>
+                </button>
+            </div>
+            <button id="navbarOpenClose">
+                <img id="navbarOpenCloseimg" src="assets/arrow.svg" alt="Arrow">
+            </button>
+        </div>
+        <main>
+            <span id="startChatting">Start chatting!</span>
+            <div id="middle">
+                <div class="chatArea">
+                    <template id="messageBoxTemplate">
+                        <div class="messageBoxContainer">
+                            <div class="messageBox">
+                                <span class="messageText"></span>
+                            </div>
+                        </div>
+                    </template>
+                    <template id="messageBoxTemplateCat">
+                        <div class="messageBoxContainer cat">
+                            <div class="pfpContainer">
+                                <img class="pfp" src="" alt="">
+                            </div>
+                            <div class="messageBox cat">
+                                <span class="messageText"></span>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+                <div class="msgInputContainer">
+                    <textarea id="msgInput" name="Message" placeholder="Message..."></textarea>
+                    <button class="msgSend">
+                        <img src="assets/send.svg" alt="Send">
+                    </button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
